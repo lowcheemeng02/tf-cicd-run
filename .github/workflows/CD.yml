@@ -5,8 +5,9 @@ on:
     inputs:
       environment:
         description: 'Environment to run tf apply on'
-        type: environment
         required: true
+        default: "dev"
+        type: choice
         options:
         - dev
         - staging
