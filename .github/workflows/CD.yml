@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
- terraform-ci:
+ terraform-cd:
    runs-on: ubuntu-latest
 
    steps:
@@ -26,6 +26,9 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1 # or hardcode us-east-1
 ##CD
+   - name: Initialize Terraform
+     run: terraform init
+     
    - name: Terraform Plan
      run: terraform plan
 
