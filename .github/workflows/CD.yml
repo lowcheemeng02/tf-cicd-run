@@ -9,6 +9,7 @@ on:
         default: "dev"
         type: choice
         options:
+        ##these options here can be used to load different blocks of yaml for different steps
         - dev
         - staging
         - prod
