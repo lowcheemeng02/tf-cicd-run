@@ -39,4 +39,4 @@ jobs:
 
    - shell: bash
      run: |
-       echo "hello"
+       echo "merge main"
