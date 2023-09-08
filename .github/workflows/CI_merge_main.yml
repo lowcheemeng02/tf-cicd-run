@@ -1,4 +1,4 @@
-name: Terraform CI
+name: Terraform CI-merge
 
 
 on:
@@ -36,7 +36,3 @@ jobs:
 
    - name: Terraform Validate
      run: terraform validate -no-color
-
-   - shell: bash
-     run: |
-       echo "merge main"
