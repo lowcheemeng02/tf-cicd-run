@@ -13,6 +13,15 @@ on:
         - dev
         - staging
         - prod
+      platform:
+        description: 'platform'
+        required: true
+        default: "x64"
+        type: choice
+        options:
+        - x64
+        - x86
+        - ARM
 
 jobs:
  terraform-cd:
